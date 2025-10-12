@@ -41,7 +41,7 @@
 
 ## 🌐 Connect with Me
 <p align="center">
-  <a href="https://linkedin.com/https://www.linkedin.com/in/pratik-agarwal-9147ab373/">
+  <a href="https://www.linkedin.com/in/pratik-agarwal-9147ab373/">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
   </a>
   <a href="https://github.com/pratik7143">
