@@ -1,4 +1,4 @@
-# Hi there 👋, I'm Pratik Agarwal 🙂
+# Hi there 👋, I'm Pratik 
 ![Profile Views](https://komarev.com/ghpvc/?username=pratik7143&color=blue)
 
 
