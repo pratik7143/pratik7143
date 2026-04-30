@@ -1,4 +1,4 @@
-# Hi there 👋, I'm Satyansh Singh
+# Hi there 👋, I'm Pratik Agarwal
 
 ![Profile Views](https://komarev.com/ghpvc/?username=pratik7143&color=blue)
 
