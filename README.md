@@ -3,9 +3,9 @@
 ![Profile Views](https://komarev.com/ghpvc/?username=pratik7143&color=blue)
 
 
-🎓 B.Tech CSE Student @ UPES Dehradun (AI & ML Specialization)  
-💡 Aspiring AI/ML Developer | Open-Source Enthusiast | Lifelong Learner  
-🌱 Currently exploring: C, DSA, Git/GitHub, Machine Learning  
+🎓 B.Tech CSE Student @ UPES Dehradun (Cloud Computing Specialization)  
+💡 Aspiring Cloud Engineer| Open-Source Enthusiast | Lifelong Learner  
+🌱 Currently exploring: C, Java, DSA, Git/GitHub, Machine Learning  
 
 ---
 
@@ -37,7 +37,7 @@
 ## 🌱 Current Focus
 - Contributing to Hacktoberfest 2025 🎉  
 - Mastering DSA & Competitive Programming  
-- Exploring AI/ML applications  
+- Exploring Cloud applications  
 ---
 
 ## 🌐 Connect with Me
