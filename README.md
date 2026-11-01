@@ -1,58 +1,31 @@
-# Hi there 👋, I'm Pratik Agarwal
+name: Generate Snake Animation
 
-![Profile Views](https://komarev.com/ghpvc/?username=pratik7143&color=blue)
+on:
+  schedule:
+    - cron: "0 0 * * *"   # runs daily
+  workflow_dispatch:
+  push:
+    branches:
+      - main
 
+permissions:
+  contents: write
 
-🎓 B.Tech CSE Student @ UPES Dehradun (Cloud Computing Specialization)  
-💡 Aspiring Cloud Engineer| Open-Source Enthusiast | Lifelong Learner  
-🌱 Currently exploring: C, Java, DSA, Git/GitHub, Machine Learning  
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
 
----
-
-## 🔥 GitHub Stats
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=pratik7143&show_icons=true&theme=radical" alt="stats" height="165"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=pratik7143&theme=radical" alt="streak" height="165"/>
-</p>
-
----
-
-## 🛠 Tech Stack
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)  
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-0078D4?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-
----
-
-## 📂 Featured Projects
-- 🔢 [C Programs Collection](#) – beginner to advanced problem-solving  
-- 🌍 [Open Source Contributions](#) – Hacktoberfest & community projects (about to start)
-
----
-
-## 🌱 Current Focus
-- Contributing to Hacktoberfest 2025 🎉  
-- Mastering DSA & Competitive Programming  
-- Exploring Cloud applications  
----
-
-## 🌐 Connect with Me
-<p align="center">
-  <a href="https://www.linkedin.com/in/pratik-agarwal-9147ab373/">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
-  </a>
-  <a href="https://github.com/pratik7143">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-  </a>
-  <a href="https://twitter.com/A66701802Pratik">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/>
-  </a>
-</p>
-
----
-
-⭐ From [pratik7143](https://github.com/pratik7143)
+      - uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
